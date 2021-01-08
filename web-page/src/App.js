@@ -54,7 +54,7 @@ function App() {
            
            Phone
            <input type="number" name="phone" ref={register({required:true,minLength:9,maxLength:11})}/>
-           
+           // why didn't you use the regex here aswell? pattern [0-9]{9,11} would have been sufficient
          </label>
          <br></br>
          <button type="submit">Submit</button>
